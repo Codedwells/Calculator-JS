@@ -1,0 +1,54 @@
+/* styles for the main containers */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  background-color: black;
+  height: 55rem;
+  width: 35rem;
+  border-radius: 25px;
+}
+/* styles for container components */
+#navigator-top {
+  background-color: rgb(75, 71, 71);
+  height: 3rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#output-screen {
+  background-color: rgb(107, 107, 106);
+  margin: 5px 10px;
+  height: 20rem;
+  border-radius: 20px;
+}
+/* button container styling */
+#btn-container {
+  background-color: aquamarine;
+  height: 31rem;
+  margin: 0px 20px;
+}
+#btn-layer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: rgb(163, 130, 174);
+}
+.btn {
+  width: 85px;
+  height: 85px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn:active{
+    background-color: rgb(36, 35, 35);
+  transition: background-color 0.15s;
