@@ -6,7 +6,7 @@
 }
 #container {
   background-color: black;
-  height: 55rem;
+  height: 58rem;
   width: 35rem;
   border-radius: 25px;
 }
@@ -23,11 +23,24 @@
   height: 20rem;
   border-radius: 20px;
 }
+#curr-calc {
+  text-align: end;
+  background-color: antiquewhite;
+  height: 70px;
+  padding-top: 150px;
+  font-size: 50px;
+  padding-right: 10px;
+}
+#answer {
+  text-align: end;
+  font-size: 50px;
+  padding-right: 10px;
+}
 /* button container styling */
 #btn-container {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   height: 31rem;
-  margin: 0px 20px;
+  margin: 20px 25px;
 }
 #btn-layer {
   display: flex;
@@ -36,19 +49,80 @@
   height: 90px;
   margin-top: 10px;
   width: 100%;
-  background-color: rgb(163, 130, 174);
+  /* background-color: rgb(163, 130, 174); */
+}
+#btn-last-layer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 90px;
+  margin-top: 10px;
+  width: 100%;
+  /* background-color: rgb(163, 130, 174); */
 }
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 85px;
   height: 85px;
   border: none;
   border-radius: 50%;
-  background-color: black;
+  background-color: rgb(35, 151, 171);
   cursor: pointer;
   color: white;
   font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.btn:active{
-    background-color: rgb(36, 35, 35);
+.btn:active {
+  background-color: rgb(36, 35, 35);
   transition: background-color 0.15s;
+}
+/* Individual btn styles */
+.c-sign {
+  height: 45px;
+}
+.backsp-sign {
+  height: 45px;
+  font-weight: bold;
+}
+.ampersand {
+  font-weight: bold;
+}
+.divide-sign,
+.multiply-sign,
+.equal-sign {
+  height: 45px;
+}
+
+.minus-sign,
+.add-sign {
+  height: 45px;
+}
+#btn19 {
+  width: 200px;
+  border-radius: 30px;
+  margin-left: 35px;
+  margin-top: 0px;
+}
+#btn1 {
+  background-color: transparent;
+}
+#btn1:active {
+  background-color: rgb(34, 31, 31);
+}
+/* last layer custom styles */
+#btn17,
+#btn18,
+#btn19 {
+  display: inline-block;
+}
+#btn18 {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+#btn17 {
+  margin-left: 35px;
+}
