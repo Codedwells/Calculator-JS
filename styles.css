@@ -32,14 +32,16 @@
   background-color: (107, 107, 106);
   height: 100px;
   width: auto;
-  font-size: 45px;
+  font-size: 40px;
   padding-right: 0px;
+  word-wrap: break-word;
 }
 #answer {
   color: wheat;
   text-align: end;
-  font-size: 35px;
+  font-size: 30px;
   height: 80px;
+  word-wrap: break-word;
 }
 /* button container styling */
 #btn-container {
