@@ -1,40 +1,46 @@
 /* styles for the main containers */
+
 .main-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 7rem;
 }
 #container {
   background-color: black;
   height: 58rem;
-  width: 35rem;
-  border-radius: 25px;
+  width: 32rem;
+  border-radius: 50px;
 }
 /* styles for container components */
 #navigator-top {
-  background-color: rgb(75, 71, 71);
+  background-color: black;
   height: 3rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 #output-screen {
-  background-color: rgb(107, 107, 106);
-  margin: 5px 10px;
+  background-color: rgb(0, 0, 0);
+  margin: 0px 10px;
   height: 20rem;
   border-radius: 20px;
 }
 #curr-calc {
+  color: wheat;
   text-align: end;
-  background-color: antiquewhite;
-  height: 70px;
-  padding-top: 150px;
+  background-color: (107, 107, 106);
+  height: 100px;
+  padding-top: 110px;
+  width: auto;
   font-size: 50px;
-  padding-right: 10px;
+  padding-right: 0px;
 }
 #answer {
+  color: wheat;
   text-align: end;
   font-size: 50px;
   padding-right: 10px;
+  height: 100px;
 }
 /* button container styling */
 #btn-container {
@@ -76,8 +82,12 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .btn:active {
-  background-color: rgb(36, 35, 35);
+  background-color: rgb(0, 0, 0);
   transition: background-color 0.15s;
+}
+.btn:hover {
+  scale: 1.09;
+  transition: 0.15s ease-in;
 }
 /* Individual btn styles */
 .c-sign {
@@ -100,29 +110,60 @@
 .add-sign {
   height: 45px;
 }
-#btn19 {
-  width: 200px;
-  border-radius: 30px;
-  margin-left: 35px;
-  margin-top: 0px;
-}
-#btn1 {
-  background-color: transparent;
-}
-#btn1:active {
-  background-color: rgb(34, 31, 31);
-}
 /* last layer custom styles */
-#btn17,
-#btn18,
-#btn19 {
+#equal,
+#dot,
+#zero {
   display: inline-block;
 }
-#btn18 {
+#equal {
   display: flex;
   align-items: center;
   margin-left: 35px;
 }
-#btn17 {
+#zero,
+#dot {
   margin-left: 35px;
+}
+#equal {
+  width: 200px;
+  border-radius: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  border: 3px solid;
+  border-radius: 14px;
+  padding: 0px 10px;
+  margin-top: 4rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+.footer:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.25s ease-out;
+}
+#divide,
+#multi,
+#minus,
+#adding,
+#equal,
+#modul {
+  background-color: goldenrod;
+}
+#shift {
+  background-color: whitesmoke;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+#shift.active {
+  background-color: black;
+}
+#navigation-top.active {
+  background-color: whitesmoke;
 }
