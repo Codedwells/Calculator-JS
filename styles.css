@@ -165,3 +165,19 @@
 #navigation-top.active {
   background-color: whitesmoke;
 }
+@media screen and (max-width: 490px) {
+  #container {
+    width: 350px;
+    height: 700px;
+  }
+  #zero,
+  #dot {
+    width: 150px;
+  }
+  #btn-last-layer {
+    padding-right: 20px;
+  }
+  #equal {
+    width: 230px;
+  }
+}
