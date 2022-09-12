@@ -1,7 +1,7 @@
 const screen = (outPut) => console.log(outPut);
 var btns = document.querySelectorAll("button");
-var calc = document.querySelector("#curr-calc");
-var answ = document.querySelector("#answer");
+var calc = document.querySelector(".curr-calc");
+var answ = document.querySelector(".answer");
 screen(answ);
 //screen(calc);
 ////Computation Logic
@@ -33,6 +33,22 @@ btns.forEach((curr) => {
     }
   };
 });
-//link
+//see it on github
 var link = document.querySelector(".footer");
+var main = document.querySelector(".main-container");
+var shift = document.querySelector(".shift");
+var container = document.querySelector("#container");
+var outScreen = document.querySelector(".output-screen");
+var container = document.querySelector("#container");
 link.addEventListener("click", () => alert("Open github"));
+//dark and light mode functionality
+
+screen(shift);
+shift.addEventListener("click", () => {
+  shift.classList.toggle("dark");
+  main.classList.toggle("dark");
+  container.classList.toggle("light");
+  outScreen.classList.toggle("smoke");
+  calc.classList.toggle("dark-txt");
+  answ.classList.toggle("dark-txt");
+});

@@ -5,9 +5,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
-#container {
+.container {
   background-color: black;
   height: 700px;
   width: 26rem;
@@ -20,27 +21,28 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-#output-screen {
+.output-screen {
   background-color: rgb(0, 0, 0);
   margin: 0px 10px;
   height: 12rem;
   border-radius: 20px;
 }
-#curr-calc {
+.curr-calc {
   color: wheat;
   text-align: end;
   background-color: (107, 107, 106);
   height: 100px;
   width: auto;
+  padding-right: 5px;
   font-size: 40px;
-  padding-right: 0px;
   word-wrap: break-word;
 }
-#answer {
+.answer {
   color: wheat;
   text-align: end;
   font-size: 30px;
   height: 80px;
+  padding-right: 5px;
   word-wrap: break-word;
 }
 /* button container styling */
@@ -145,6 +147,9 @@
   color: white;
   transition: all 0.25s ease-out;
 }
+.footer:active {
+  opacity: 0.8;
+}
 #divide,
 #multi,
 #minus,
@@ -153,20 +158,28 @@
 #modul {
   background-color: goldenrod;
 }
-#shift {
-  background-color: whitesmoke;
-  height: 40px;
+.shift {
+  background-color: rgb(213, 213, 213);
+  height: 30px;
   margin-top: 0.8em;
-  width: 40px;
+  width: 30px;
   border-radius: 50%;
   margin-left: 8px;
 }
-#shift.active {
+/* DARK AND LIGHT MODE */
+.dark {
   background-color: black;
 }
-#navigation-top.active {
-  background-color: whitesmoke;
+.light {
+  background-color: rgb(182, 182, 182);
 }
+.smoke {
+  background-color: rgb(213, 213, 213);
+}
+.dark-txt {
+  color: black;
+}
+/* MEDIA QUERIES */
 @media screen and (max-width: 490px) {
   #container {
     width: 350px;
